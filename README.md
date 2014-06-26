@@ -14,6 +14,7 @@ Then, get app to work with:
     git clone git@github://django-repo-name app
 
 Login to development environment and setup web application:
+
     vagrant ssh
     cd /vagrant/app
     virtualenv venv
@@ -23,6 +24,7 @@ Login to development environment and setup web application:
     ./manage.py migrate
 
 Build frontend modules:
+
     cd etc
     npm install
     node_modules/.bin/bower install
@@ -31,9 +33,11 @@ Build frontend modules:
     ./manage.py collectstatic
 
 Launch application (without supervisor):
+
     gunicorn smsbank.wsgi
 
 Suspend or destroy VM:
+
     vagrant suspend
     vagrant destroy
 
