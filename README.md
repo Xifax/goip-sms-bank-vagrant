@@ -27,8 +27,8 @@ Build frontend modules:
 
     cd etc
     npm install
-    node_modules/.bin/bower install
-    node_modules/.bin/grunt build
+    ./node_modules/.bin/bower install
+    ./node_modules/.bin/grunt build
     cd ..
     ./manage.py collectstatic
 
@@ -48,3 +48,5 @@ initialize it in development environment.
 All packages, modules and settings are specified in `bootstrap.sh`.
 Guest http port is forwarded to host as `8888` and may be changed in
 `Vagrantfile`.
+
+You may also initialize app via Makefile tasks (not tested for Ubuntu).
